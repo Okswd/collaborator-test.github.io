@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Responcive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test</title>
+  <!-- Favicon and theme color -->
+  <meta name="theme-color" content="#e4e4e4">
+  <link rel="apple-touch-icon" href="img/icon.png">
+  <link rel="icon" href="img/favicon.png">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1>Управление рассылками</h1>
+          <p>Здравствуйте, Андрей. Выберите, категории писем, от которых хотите отписаться. <br>
+          Но пожалуйста, исключите только те категории, которые действительно вас не интересуют. <br>
+          Мы обещаем слать только полезные письма где 😊</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- General Notifications -->
+  <section class="general-notifications">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h5>Общие уведомления</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-5 col-sm-6 col-4">
+          <p class="general-notifications__series">Приветственная серия</p>
+          <p class="general-notifications__webinars">Образовательные вебинары</p>
+          <div class="general-notifications__info  d-flex">
+            <p class="general-notifications__text">Личные сообщения</p>
+            <button type="button" class="general-notifications__btn" data-container="body" data-toggle="popover" data-placement="right" data-content="Письма об обновлениях и улучшениях платформы">
+            <em>i</em>
+            </button>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-7">
+          <div class="general-notifications__toggl d-flex">
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+              <label class="custom-control-label" for="customSwitch1"></label>
+            </div>
+            <p class="general-notifications__useful">
+              4 полезных и ёмких письма в течение месяца
+            </p>
+          </div>
+          <div class="general-notifications__togle d-flex">
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="customSwitch2" checked>
+              <label class="custom-control-label" for="customSwitch2"></label>
+            </div>
+            <p class="general-notifications__coming">
+              Бесплатные вебинары проходят 1 раз в 2 недели. <br>
+              Вы будете получать 2 письма с напоминанием <br> о предстоящем вебинаре.
+            </p>
+          </div>
+          <div class="general-notifications__toggle d-flex">
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="customSwitch3" checked>
+              <label class="custom-control-label" for="customSwitch3"></label>
+            </div>
+            <div class="form-group general-notifications__choice">
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>Мгновенно</option>
+                <option>1 раз в день</option>
+                <option>Отключить</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Website Notification -->
+  <section class="website-notification">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h5>Уведомление по Сайтам</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-5 col-sm-6 col-4">
+          <p class="website-notification__news">Новости</p>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-7">
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="customSwitch4" checked>
+            <label class="custom-control-label" for="customSwitch4"></label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-5 col-sm-6 col-4">
+          <h6>Поисковые агенты</h6>
+          <p class="website-notification__bussines">Бизнес</p>
+          <div class="website-notification__description d-sm-flex justify-content-between">
+            <div class="website-notification__button d-lg-flex">
+              <div class="alert website-notification__description-btn-close" role="alert">
+                Seo
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span class="close-button" aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="alert website-notification__description-btn-close" role="alert">
+                Продвижение
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span class="close-button" aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="alert website-notification__description-btn-close" role="alert">
+                Аналитика
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span class="close-button" aria-hidden="true">&times;</span>
+                </button>
+              </div>
+            </div>
+            <div class="website-notification__button">
+              <button type="button" class="btn btn-link website-notification__btn-link" data-toggle="modal" data-target="#exampleModal">
+                Детали
+              </button>
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Бизнес</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="close-button" aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      При данном выборе, Вам будет приходить информация про совокупность различных мер, усилий, действий, предпринимаемых маркетологами, продавцами товара, посредниками в целях повышения спроса, увеличения сбыта, а так же аналитика. 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="website-notification__number">123</p>
+          <div class="website-notification__description d-sm-flex justify-content-between">
+            <div class="website-notification__button d-lg-flex">
+              <div class="alert website-notification__description-btn-close" role="alert">
+                Seo
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span class="close-button" aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="alert website-notification__description-btn-close" role="alert">
+                Продвижение
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span class="close-button" aria-hidden="true">&times;</span>
+                </button>
+              </div>
+            </div>
+            <div class="website-notification__button">
+              <button type="button" class="btn btn-link website-notification__btn-link" data-toggle="modal" data-target="#exampleModal1">
+                Детали
+              </button>
+              <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel1">123</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="close-button" aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      При данном выборе, Вам будет приходить информация про совокупность различных мер, усилий, действий, предпринимаемых маркетологами, продавцами товара, посредниками в целях повышения спроса, увеличения сбыта. 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="website-notification__seo">SEO</p>
+          <div class="website-notification__description d-sm-flex justify-content-between">
+            <div class="website-notification__button d-lg-flex">
+              <div class="alert website-notification__description-btn-close" role="alert">
+                Seo
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span class="close-button" aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="alert website-notification__description-btn-close" role="alert">
+                Продвижение
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span class="close-button" aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="alert website-notification__description-btn-close" role="alert">
+                Аналитика
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span class="close-button" aria-hidden="true">&times;</span>
+                </button>
+              </div>
+            </div>
+            <div class="website-notification__button">
+              <button type="button" class="btn btn-link website-notification__btn-link" data-toggle="modal" data-target="#exampleModal2">
+                Детали
+              </button>
+              <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel2">SEO</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="close-button" aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      При данном выборе, Вам будет приходить информация про совокупность различных мер, усилий, действий, предпринимаемых маркетологами, продавцами товара, посредниками в целях повышения спроса, увеличения сбыта, аналитика, а так же полезная информация для продвижения. 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="website-notification__links">Бурж Ссылки</p>
+          <div class="website-notification__description d-sm-flex justify-content-between">
+            <div class="alert website-notification__description-btn-close h-auto" role="alert">
+              Биржи ссылок: не обнаружен
+              <button type="button" class="close w-auto" data-dismiss="alert" aria-label="Close">
+                <span class="close-button" aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="website-notification__button">
+              <button type="button" class="btn btn-link website-notification__btn-link" data-toggle="modal" data-target="#exampleModal3">
+                Детали
+              </button>
+              <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel3">Бурж Ссылки</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="close-button" aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      К сожалению по этим данным информации не обнаружено. 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-7">
+          <div class="website-notification__togle d-flex">
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="customSwitch5" checked>
+              <label class="custom-control-label" for="customSwitch5"></label>
+            </div>
+            <p class="website-notification__platform">
+              Поисковый агент присылает 1 письмо <br> в неделю и только при условии, что найдены <br> новые площадки.
+            </p>
+          </div>
+          <div class="website-notification__toggle d-flex">
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="customSwitch6" checked>
+              <label class="custom-control-label" for="customSwitch6"></label>
+            </div>
+          </div>
+          <div class="website-notification__togglee d-flex">
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="customSwitch7" checked>
+              <label class="custom-control-label" for="customSwitch7"></label>
+            </div>
+          </div>
+          <div class="website-notification__toggl d-flex">
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="customSwitch8" checked>
+              <label class="custom-control-label" for="customSwitch8"></label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-5 col-sm-6 col-4">
+          <h6>Рекламные компании</h6>
+          <p class="website-notification__building">Строительство домов в Украине</p>
+          <p class="website-notification__building">Строительство домов в Украине</p>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-7">
+          <div class="website-notification__toogle d-flex">
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="customSwitch9" checked>
+              <label class="custom-control-label" for="customSwitch9"></label>
+            </div>
+            <div class="form-group website-notification__choice">
+              <select class="form-control" id="exampleFormControlSelect9">
+                <option>Мгновенно</option>
+                <option>1 раз в день</option>
+                <option>Отключить</option>
+              </select>
+            </div>
+          </div>
+          <div class="website-notification__togg d-flex">
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="customSwitch10" checked>
+              <label class="custom-control-label" for="customSwitch10"></label>
+            </div>
+            <div class="form-group website-notification__choice">
+              <select class="form-control" id="exampleFormControlSelect10">
+                <option>Мгновенно</option>
+                <option>1 раз в день</option>
+                <option>Отключить</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </section>
+  <!-- Telegram Notification -->
+  <section class="telegram-notification">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h5 class="telegram-notification__title">Уведомления по Телеграму</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-5 col-sm-6 col-4">
+          <p class="website-notification__news">Новости</p>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-7">
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="customSwitch11" checked>
+            <label class="custom-control-label" for="customSwitch11"></label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Saving Data -->
+  <section class="saving-data">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-5 col-sm-12 col-12">
+          <button class="btn saving-data__btn" type="reset" value="Reset">По умолчанию</button>
+          <button type="button" class="btn btn-primary saving-data__bn" data-toggle="modal" data-target="#exampleModal5">
+            Сохранить изменения
+          </button>
+          <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel5">Вы уверены?</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Данные будут сохранены при нажатии на кнопку "Да"
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Нет</button>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal6">Да</button>
+                  <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel6" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel6">Поздравляю!</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          Выбранные Вами данные сохранены.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.min.js.map"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js.map"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    })
+
+  </script>
+</body>
+</html>

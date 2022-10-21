@@ -1,0 +1,231 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+// Header
+.header {
+  padding: 30px 0;
+  p {
+    font-size: 18px;
+  }
+}
+h1 {
+  font-size: 35px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+// General Notifications
+.general-notifications {
+  h5 {
+    margin-bottom: 30px;
+  }
+  &__btn {
+    background-color: rgb(228, 228, 228);
+    border-radius: 50%;
+    border: none;
+    width: 25px;
+    height: 25px;
+    padding-left: 0;
+    padding-right: 2px;
+  }
+  &__series {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  &__webinars {
+    font-size: 14px;
+    margin-bottom: 50px;
+  }
+  &__text {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  &__useful, &__coming, &__choice {
+    font-size: 12px;
+    margin-left: 10px;
+    margin-bottom: 0;
+  }
+  &__coming {
+    margin-bottom: 10px;
+  }
+  &__toggl {
+    margin-bottom: 20px;
+  }
+}
+.form-control {
+  color:rgb(174, 174, 174);
+}
+// Website Notification
+.website-notification {
+  padding: 60px 0;
+  h5 {
+    margin-bottom: 30px;
+  }
+  &__news {
+    font-size: 14px;
+    margin-bottom: 50px;
+  }
+  h6 {
+    margin-bottom: 30px;
+  }
+  &__description {
+    max-width: 400px;
+  }
+  &__description-btn-close {
+    background-color: rgb(228, 228, 228);
+    color: rgba(94, 106, 119, 0.9);
+    text-align: center;
+    font-size: 12px;
+    line-height: 12px;
+    border: none;
+    border-radius: 4px;
+    height: 30px;
+    padding: 5px 6px;
+    margin-right: 10px;
+  }
+  &__btn-link {
+    font-size: 13px;
+  }
+  &__platform {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  &__bussines, &__number, &__seo, &__links, &__building {
+    font-size: 14px;
+  }
+  &__bussines, &__number, &__seo, &__links  {
+    margin-top: 30px;
+  }
+  &__togle {
+    margin-top: 55px;
+    margin-bottom: 145px;
+  }
+  &__toggle {
+    margin-bottom: 155px;
+  }
+  &__toggl {
+    margin-top: 245px;
+    margin-bottom: 40px;
+  }
+  &__toogle {
+    margin-top: 70px;
+  }
+  &__choice {
+    margin-left: 30px;
+  }
+}
+.alert {
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 200px;
+}
+.close-button {
+  margin-left: 5px;
+  font-weight: 300;
+  font-size: 18px;
+}
+// Telegram Notification
+.telegram-notification {
+  &__title {
+    margin-bottom: 30px;
+  }
+}
+// Saving Data
+.saving-data {
+  padding-bottom: 60px;
+  &__btn {
+    background-color:#dde6ff;
+    color: #007BFF;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  &__bn {
+    margin-bottom: 10px;
+  }
+}
+// Responcive
+@media (min-width: 576px) {
+  .website-notification {
+    &__togle {
+      margin-top: 90px;
+      margin-bottom: 100px;
+    }
+    &__toggle {
+      margin-bottom: 135px;
+    }
+    &__toggl {
+      margin-top: 180px;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .website-notification {
+    &__togle {
+      margin-top: 93px;
+      margin-bottom: 133px;
+    }
+    &__toogle {
+      margin-top: 50px;
+    }
+    &__toggle {
+      margin-bottom: 135px;
+    }
+    &__toggl {
+      margin-top: 180px;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .header {
+    p {
+      font-size: 20px;
+    }
+  }
+  .general-notifications {
+    &__useful, &__coming {
+      font-size: 14px;
+      margin-left: 30px;
+    }
+    &__choice {
+      margin-left: 30px;
+    }
+    &__series, &__webinars, &__text {
+      font-size: 18px;
+    }
+  }
+  .website-notification {
+    &__platform {
+      font-size: 14px;
+      margin-left: 30px;
+    }
+    &__news, &__bussines, &__number, &__seo, &__links, &__building {
+      font-size: 18px;
+    }
+    &__togle {
+      margin-top: 100px;
+      margin-bottom: 37px;
+    }
+    &__toggle {
+      margin-bottom: 93px;
+    }
+    &__toggl {
+      margin-top: 105px;
+      margin-bottom: 40px;
+    }
+    &__toogle {
+      margin-top: 50px;
+    }
+  }
+  .saving-data {
+    &__btn {
+      background-color:#dde6ff;
+      color: #007BFF;
+      margin-right: 10px;
+      margin-bottom: 0px;
+    }
+  }
+}
